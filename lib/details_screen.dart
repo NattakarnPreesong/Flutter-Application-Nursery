@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:nursery/home.dart';
 import 'package:nursery/parent_details_screen.dart';
@@ -47,6 +46,22 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         color: Theme.of(context).colorScheme.secondary,
                       ),
                       child: Text(
+                        'ชื่อเล่น :${student.nickName} ',
+                        style: const TextStyle(fontSize: 18),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Theme.of(context).colorScheme.secondary,
+                      ),
+                      child: Text(
                         'อายุ :${student.age} ขวบ',
                         style: const TextStyle(fontSize: 18),
                       ),
@@ -74,7 +89,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ),
                         child: Text(
                           'ชื่อผู้ปกครอง :${student.parentName}',
-                          style: const TextStyle(fontSize: 18, color: Colors.blue),
+                          style:
+                              const TextStyle(fontSize: 18, color: Colors.blue),
                         ),
                       ),
                     ),
